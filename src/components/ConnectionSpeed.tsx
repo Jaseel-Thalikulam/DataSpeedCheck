@@ -1,6 +1,7 @@
 import  { useEffect, useState } from "react";
 import "../../node_modules/react-internet-meter/dist/index.css";
 import { ReactInternetSpeedMeter } from "react-internet-meter";
+
 import { ILocationData } from "../interface/ILocatiionData";
 import axios from "axios";
 function ConnectionSpeed() {
@@ -31,7 +32,7 @@ function ConnectionSpeed() {
     (async function bundle() {
       
       
-      // fetchNetworkDetails(await getIP())
+      fetchNetworkDetails(await getIP())
     })()
 
 
@@ -60,20 +61,19 @@ function ConnectionSpeed() {
 
       
       <div className="h-screen flex justify-center items-center select-none insp">
-  <div className=" lg:flex lg:space-x-80 "> {/* Added space-x-8 for horizontal spacing */}
-
-    <div className="md: mb-10 text-violet-700"> {/* Added flex-1 for equal spacing */}
+  <div className=" lg:flex lg:space-x-80 "> 
+    <div className="md: mb-10 text-violet-700"> 
       <h1 className="font-black text-9xl">{checkSpeed} <span className="text-5xl">MB/s</span></h1>
     </div>
 
-          {/* <div className="  font-semibold text-2xl lg:font-extrabold lg:text-3xl  "> Added flex-1 for equal spacing */}
-             {/* <h4>{location?.ip}</h4>
-      <h4>{location?.continent_name}</h4>
-      <h4>{location?.latitude}</h4> */}
-      {/* <h2>IP Address : 157.44.145.135</h2>
-      <h4>Continent : Asia</h4>
-      <h4>Latitude : 10.106900215148926</h4>
-    </div> */}
+          <div className="  font-semibold text-2xl lg:font-extrabold lg:text-3xl  "> 
+            
+             <h4> IP Address : {location?.ip}</h4>
+      <h4>Continent : {location?.continent_name}</h4>
+      <h4>Latitude : {location?.latitude}</h4>
+  
+            
+    </div>
 
   </div>
 </div>

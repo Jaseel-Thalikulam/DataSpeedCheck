@@ -21,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src","react-internet-meter.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
