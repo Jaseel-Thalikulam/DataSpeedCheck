@@ -66,14 +66,7 @@ function ConnectionSpeed() {
       <h1 className="font-black text-9xl">{checkSpeed} <span className="text-5xl">MB/s</span></h1>
     </div>
 
-          <div className="  font-semibold text-2xl lg:font-extrabold lg:text-3xl  "> 
-            
-             <h4> IP Address : {location?.ip}</h4>
-      <h4>Continent : {location?.continent_name}</h4>
-      <h4>Latitude : {location?.latitude}</h4>
-  
-            
-    </div>
+
 
   </div>
 </div>
